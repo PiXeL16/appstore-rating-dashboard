@@ -1,0 +1,16 @@
+<h1 class="title" data-bind="trackName"></h1>
+
+<h2 data-bind="averageUserRatingForCurrentVersion"></h2>
+
+<p>
+  <img data-bind-src="image" height="50"></img>
+</p>
+
+<p class="context-info">
+  <span >For the latest version <strong data-bind="version"></strong> Released <strong data-bind="currentVersionReleaseDate | dateFormat"></strong>
+    From a total of <strong data-bind="userRatingCountForCurrentVersion"></strong> reviews 
+</p>
+
+<p class="next-info">
+  <span >Average rating from all versions its <strong data-bind="averageUserRating"></strong> From a total of <strong data-bind="userRatingCount"></strong>
+</p>

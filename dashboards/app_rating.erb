@@ -1,0 +1,24 @@
+<% content_for :title do %><%= AppConfig::DASHBOARD_TITLE %><%end %>
+<div class="gridster">
+  <ul>
+    <%
+        num_cols = 2
+        widget_size = 2
+    %>
+    <% AppConfig::APP_IDS.each_with_index do |app_id, index| %>
+      <% app_num = index + 1 %>
+      <li data-row="<%= app_num %>"
+        data-col=1
+        data-sizex="<%= widget_size %>" data-sizey="1">
+        <div data-id="<%= app_id + '_rating'%>"
+          data-view="AppRating"></div>
+      </li>
+       <li data-row="<%= app_num %>"
+        data-col=2
+        data-sizex="<%= widget_size %>" data-sizey="1">
+        <div data-id="<%= app_id + '_reviews'%>"
+          data-view="AppReview"></div>
+      </li>
+    <% end %>
+  </ul>
+</div>

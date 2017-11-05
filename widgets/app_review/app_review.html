@@ -1,0 +1,23 @@
+<h1 class="title">Random Reviews</h1>
+
+<p>
+  <img src="assets/thumbs_up.svg" height="30"></img> 
+  <span data-bind="random_positive_review.author_name"></span>  
+  <strong data-bind="random_positive_review.title"></strong>
+</p>
+<p class="review">
+    Rating: <span data-bind="random_positive_review.rating"></span>   
+</p>
+<p class="small" data-bind="random_positive_review.content | substringComment"></p>
+<br/>
+<p>
+  <img src="assets/thumbs_down.svg" height="30"></img> 
+  <span data-bind="random_negative_review.author_name"></span>  
+  <strong data-bind="random_negative_review.title"></strong>
+</p>
+<p class="review">
+    Rating: <span data-bind="random_negative_review.rating"></span>   
+</p>
+<p class="small" data-bind="random_negative_review.content | substringComment"></p>
+
+      
