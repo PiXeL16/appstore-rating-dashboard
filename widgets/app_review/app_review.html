@@ -6,7 +6,7 @@
   <strong data-bind="random_positive_review.title"></strong>
 </p>
 <p class="review">
-    Rating: <span data-bind="random_positive_review.rating"></span>   
+    Rating: <strong data-bind="random_positive_review.rating"></strong> for Version: <span data-bind="random_positive_review.version"></span>  
 </p>
 <p class="small" data-bind="random_positive_review.content | substringComment"></p>
 <br/>
@@ -16,7 +16,7 @@
   <strong data-bind="random_negative_review.title"></strong>
 </p>
 <p class="review">
-    Rating: <span data-bind="random_negative_review.rating"></span>   
+    Rating: <strong data-bind="random_negative_review.rating"></strong> for Version: <span data-bind="random_negative_review.version"></span> 
 </p>
 <p class="small" data-bind="random_negative_review.content | substringComment"></p>
 
