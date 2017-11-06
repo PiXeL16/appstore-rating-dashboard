@@ -4,6 +4,9 @@
 
 The App Store Rating Dashboard was build using [Dashing](http://shopify.github.com/dashing). Its a great way to show the current rating and reviews of your Apps in a TV among the team.
 
+[![Build Status](https://travis-ci.org/PiXeL16/appstore-rating-dashboard.svg?branch=master)](https://travis-ci.org/PiXeL16/appstore-rating-dashboard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Example
 
 ![Screenshot ](./screenshot.png "Example build dashboard")
