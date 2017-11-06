@@ -2,7 +2,7 @@
   <img id="header" src="./banner.png" />
 </p>
 
-App Store Rating dashboard was build using [Dashing](http://shopify.github.com/dashing). Great to show the current rating and reviews of your Apps in a TV.
+The App Store Rating Dashboard was build using [Dashing](http://shopify.github.com/dashing). Its a great way to show the current rating and reviews of your Apps in a TV among the team.
 
 ## Example
 
