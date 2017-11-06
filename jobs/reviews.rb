@@ -2,7 +2,6 @@ require_relative '../models/reviews'
 
 def get_app_reviews(app_id)
   url = "#{AppConfig::APP_CONFIG['iTunesCustomerReviewsUrl']}/id=#{app_id}/json"
-  
   response = RestClient.get(url)
   json_response = JSON.parse(response)
 

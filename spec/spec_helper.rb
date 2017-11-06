@@ -1,7 +1,8 @@
 require 'rspec'
 require 'webmock/rspec'
 require 'uri'
-require_relative '../models/build'
+require_relative '../models/review'
+require_relative '../models/reviews'
 
 def require_job path
   require File.expand_path '../../jobs/' + path, __FILE__
@@ -14,8 +15,8 @@ end
 
 module Builds
   BUILD_CONFIG = {
-    "buddyBuildApiBaseUrl" => 'https://api.buddybuild.com',
-    "buddyBuildAppID" => '12341234'
+    "iTunesAppInfoLookUpUrl" => 'http://itunes.apple.com/lookup',
+    "iTunesCustomerReviewsUrl" => 'http://itunes.apple.com/rss/customerreviews'
   }
 end
 

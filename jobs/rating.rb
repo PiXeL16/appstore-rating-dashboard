@@ -1,7 +1,6 @@
 
 def get_app_info(app_id)
   url = "#{AppConfig::APP_CONFIG['iTunesAppInfoLookUpUrl']}?id=#{app_id}"
-
   response = RestClient.get(url)
   json_response = JSON.parse(response)
 
